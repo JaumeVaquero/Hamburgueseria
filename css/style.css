@@ -300,11 +300,16 @@ main section p {
 
 /* inicio aboutus */
 
+main section {
+    padding: calc(var(--margingrid)*3) var(--margingrid);
+}
+
 main #aboutus .flex .column {
     margin: var(--margingrid) 0;
 }
 
 main #aboutus .column h3 {
+
     font-weight: 700;
     font-size: 110%;
 }
@@ -335,6 +340,113 @@ main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
 }
 
 /* fin aboutus */
+
+/*inicio ourblogs*/
+
+main #ourblogs .grid {
+    display: grid;
+}
+main #ourblogs .grid .container1 {
+    background-image: url(../images/news3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    height: 40vh;
+    color: white;
+    display: flex;
+}
+main #ourblogs .grid .container2 {
+    background-image: url(../images/news2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    height: 40vh;
+    color: white;
+    display: flex;
+}
+
+main #ourblogs .grid .container3 {
+    background-image: url(../images/news1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    height: 40vh;
+    color: white;
+    display: flex;
+}
+
+
+main #ourblogs .grid .container1 h3{
+    background-color: var(--colorprincipal);
+    text-align: center;
+    font-size: 150%;
+    color: white;
+}
+main #ourblogs .grid .container2 h3{
+    background-color: var(--colorprincipal);
+    text-align: center;
+    font-size: 150%;
+    color: white;
+}
+main #ourblogs .grid .container3 h3{
+    background-color: var(--colorprincipal);
+    text-align: center;
+    font-size: 150%;
+    color: white;
+}
+main #ourblogs .grid .container1 h3{
+    background-color: var(--colorprincipal);
+    text-align: center;
+    font-size: 150%;
+    color: white;
+}
+main #ourblogs .grid .container2 h3{
+    background-color: var(--colorprincipal);
+    text-align: center;
+    font-size: 150%;
+    color: white;
+}
+
+main #ourblogs .wrapper{
+    padding: 2em;
+}
+main #ourblogs .grid .wrapper h3 {
+    font-size: 150%;
+    font-family: var(--fuenteprincipal);
+}
+main #ourblogs .grid .wrapper h4 {
+    color: var(--colorprincipal);
+    font-size: 110%;
+    font-weight: 700;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+main #ourblogs .grid article h3 {
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 110%;
+}
+
+.enlace {
+    text-decoration: none;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+
+
+
+/*fin ourblogs*/
+
+
+
+
+
+
+
+
+
 
 /* mediaquerys */
 
@@ -379,7 +491,12 @@ main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
     main #ourservices .grid article:last-child {
         grid-column: 3/4;
     }
+    main #ourblogs .container .grid {
+        
+        padding: var(--margingrid);
+    }
 }
+
 
 @media(min-width: 1004px) {
     header .hamburguesa {
@@ -395,5 +512,9 @@ main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
     header .menu li a {
         border: 0px;
         padding: 0.5em calc(var(--margingrid));
+    }
+    main #ourblogs .container .grid {
+        display: flex;
+        padding: var(--margingrid);
     }
 }
