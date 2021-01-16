@@ -366,6 +366,7 @@ main #ourblogs .grid .container h3{
     color: white;
     width: 100px;
     height: 100px;
+    
 }
 
 main #ourblogs .wrapper{
@@ -402,54 +403,72 @@ main #ourblogs .grid article h3 {
 
 /*inicio menu*/
 
-body {
+body main .fondocolor {
     background-color: var(--colorsecundario);
 }
-main .container h2 {
+main #todaysmenu .container h2 {
     color: white;
 }
-main .grid {
+main .gridmenu {
     display: grid;
 }
-main .grid #submenu{
-    display: grid;
-      
+main .gridmenu #submenu{
+    display: grid;    
 }
 
-main .grid #submenu a{
-    
+main .gridmenu #submenu a{
     background-color: var(--colorsecundario);
     padding: var(--margingrid);
     color: white;
     text-decoration: none;
-    margin: var(--margingrid);
-    
 }
 
-main .grid #submenu a:hover {
+main .gridmenu #submenu a:hover {
     background: var(--colorprincipal);
 }
 
-main .grid #hotoffers{
+main .gridmenu #hotoffers h3{
+    color: white;
+    border-bottom: 2px solid var(--colorprincipal);
+    padding: var(--margingrid);
+    font-weight: bold;
+
+}
+main .gridmenu #hotoffers h4{
+    color: white;
+    padding: var(--margingrid);
+}
+
+main .gridmenu #articulos {
+    display:grid;
+    margin: var(--margingrid);
+    padding: var(--margingrid);
+}
+
+main .gridmenu #articulos article{
+    display: grid;
+    margin: var(--margingrid);
+}
+main .gridmenu #articulos article h3{
+    color:white;
+    font-weight: bold;
     margin: var(--margingrid);
 }
 
-main .grid #hotoffers h3{
-    color: white;
-    border-bottom: var(--colorprincipal);
-    padding: var(--margingrid);
-    text-align:left;
-
-}
-main .grid #hotoffers h4{
-    color: white;
-    padding: var(--margingrid);
+main .gridmenu #articulos article span{
+    color: var(--colorprincipal);
+    text-align: right;
+    margin: var(--margingrid);
 }
 
-main .grid article {
-    display:grid;
-    align-items: center;
+main .gridmenu #articulos article h4{
+    color:white;
+    margin: var(--margingrid);
 }
+main .gridmenu #articulos article .enlace{
+    margin: var(--margingrid);
+    margin-bottom: 2em;
+   }
 
 
 /*fin menu*/
@@ -478,6 +497,32 @@ main .grid article {
     main #aboutus {
         margin-bottom: 2em;
     }
+    main .gridmenu {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--margingrid);
+    }
+    main .gridmenu:last-child {
+        grid-column: 2/4;
+    }
+    main .gridmenu .gridcolumna{
+        grid-template-rows: repeat(2, 1fr);
+        gap: var(--margingrid);
+    }
+
+    main #articulos {
+        grid-template-rows: repeat(3, 1fr);
+        margin: var(--margingrid);
+    }
+    main #articulos article{
+        grid-template-columns: repeat(2, 1fr);
+        margin: var(--margingrid);
+    }
+
+    main .gridmenu #articulos figure {
+        width: 100%;
+    }
+
+    
 }
 
 @media(min-width: 768px) {
