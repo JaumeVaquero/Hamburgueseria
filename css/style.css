@@ -346,62 +346,21 @@ main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
 main #ourblogs .grid {
     display: grid;
 }
-main #ourblogs .grid .container1 {
-    background-image: url(../images/news3.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-blend-mode: multiply;
+main #ourblogs .grid .container {
+    margin: 0 auto;
+    width: 100%;
+    padding: var(--margingrid);
     height: 40vh;
-    color: white;
-    display: flex;
-}
-main #ourblogs .grid .container2 {
-    background-image: url(../images/news2.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-blend-mode: multiply;
-    height: 40vh;
-    color: white;
-    display: flex;
+    margin-bottom: 2em;
 }
 
-main #ourblogs .grid .container3 {
-    background-image: url(../images/news1.jpg);
+main #ourblogs .grid .container h3{
+    position: absolute;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--colorprincipal);
     background-size: cover;
-    background-position: center center;
-    background-blend-mode: multiply;
-    height: 40vh;
-    color: white;
-    display: flex;
-}
-
-
-main #ourblogs .grid .container1 h3{
-    background-color: var(--colorprincipal);
-    text-align: center;
-    font-size: 150%;
-    color: white;
-}
-main #ourblogs .grid .container2 h3{
-    background-color: var(--colorprincipal);
-    text-align: center;
-    font-size: 150%;
-    color: white;
-}
-main #ourblogs .grid .container3 h3{
-    background-color: var(--colorprincipal);
-    text-align: center;
-    font-size: 150%;
-    color: white;
-}
-main #ourblogs .grid .container1 h3{
-    background-color: var(--colorprincipal);
-    text-align: center;
-    font-size: 150%;
-    color: white;
-}
-main #ourblogs .grid .container2 h3{
-    background-color: var(--colorprincipal);
     text-align: center;
     font-size: 150%;
     color: white;
@@ -439,6 +398,7 @@ main #ourblogs .grid article h3 {
 
 /*fin ourblogs*/
 
+/*inicio menu*/
 
 
 
@@ -446,7 +406,7 @@ main #ourblogs .grid article h3 {
 
 
 
-
+/*fin menu*/
 
 /* mediaquerys */
 
