@@ -364,6 +364,8 @@ main #ourblogs .grid .container h3{
     text-align: center;
     font-size: 150%;
     color: white;
+    width: 100px;
+    height: 100px;
 }
 
 main #ourblogs .wrapper{
@@ -400,10 +402,54 @@ main #ourblogs .grid article h3 {
 
 /*inicio menu*/
 
+body {
+    background-color: var(--colorsecundario);
+}
+main .container h2 {
+    color: white;
+}
+main .grid {
+    display: grid;
+}
+main .grid #submenu{
+    display: grid;
+      
+}
 
+main .grid #submenu a{
+    
+    background-color: var(--colorsecundario);
+    padding: var(--margingrid);
+    color: white;
+    text-decoration: none;
+    margin: var(--margingrid);
+    
+}
 
+main .grid #submenu a:hover {
+    background: var(--colorprincipal);
+}
 
+main .grid #hotoffers{
+    margin: var(--margingrid);
+}
 
+main .grid #hotoffers h3{
+    color: white;
+    border-bottom: var(--colorprincipal);
+    padding: var(--margingrid);
+    text-align:left;
+
+}
+main .grid #hotoffers h4{
+    color: white;
+    padding: var(--margingrid);
+}
+
+main .grid article {
+    display:grid;
+    align-items: center;
+}
 
 
 /*fin menu*/
