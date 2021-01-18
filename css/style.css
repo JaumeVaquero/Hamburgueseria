@@ -345,8 +345,10 @@ main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
 
 main #ourblogs .grid {
     display: grid;
+    
 }
 main #ourblogs .grid .container {
+    position: relative;
     margin: 0 auto;
     width: 100%;
     padding: var(--margingrid);
@@ -354,19 +356,18 @@ main #ourblogs .grid .container {
     margin-bottom: 2em;
 }
 
-main #ourblogs .grid .container h3{
+main #ourblogs .grid .container .div{
+
     position: absolute;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--colorprincipal);
-    background-size: cover;
+    color: white;    
+    font-weight: 600;
+    padding: 0.5em 0.75em ;
     text-align: center;
-    font-size: 150%;
-    color: white;
-    width: 100px;
-    height: 100px;
-    
+    background-color: #d33d23d5; 
+    top: 0;
+}
+main #ourblogs .grid .container .div span{
+    text-align: bottom;
 }
 
 main #ourblogs .wrapper{
@@ -429,7 +430,7 @@ main .gridmenu #submenu a:hover {
 
 main .gridmenu #hotoffers h3{
     color: white;
-    border-bottom: 2px solid var(--colorprincipal);
+    border-color: var(--colorprincipal)  
     padding: var(--margingrid);
     font-weight: bold;
 
@@ -505,7 +506,7 @@ main .gridmenu #articulos article .enlace{
         grid-column: 2/4;
     }
     main .gridmenu .gridcolumna{
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr 3fr;
         gap: var(--margingrid);
     }
 
